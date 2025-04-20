@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.carusel_img {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+.carusel_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carusel_list {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.item_1 {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #cbd7a8;
+}
+.item_2 {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #666565;
+}
+.item_3 {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.main {
+  background: #d0d92e;
+  background: linear-gradient(
+    9deg,
+    rgba(208, 217, 46, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 139, 69, 1) 99%
+  );
+  min-height: 100vh;
+  margin-top: 100px;
+  padding: 100px 0px;
+}
+.card {
+  padding: 20px;
+  width: 300px;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 18px;
+}
+.card_img img {
+  width: 150px;
+  position: absolute;
+  top: -40px;
+  left: 75px;
+  border-radius: 18px;
+}
+.card_text {
+  padding-top: 120px;
+  text-align: center;
+}
+
+.card_item {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  text-align: center;
+  gap: 30px;
+  padding-top: 10px;
+}
+.card_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+.card_section {
+  display: none;
+}
+.card_section.show {
+  display: block;
+}
+.btn {
+  padding-top: 20px;
+  padding-left: 80px;
+}
+.btn {
+  display: block;
+}
+.btn.show {
+  display: none;
+}
+.unfollo {
+  display: none;
+}
+.unfollo.showed {
+  display: block;
+}
+.btn {
+  button {
+    width: 100px;
+    height: 30px;
+    background: dodgerblue;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+.btn_ms1 {
+  width: 100px;
+  height: 30px;
+  background: #ddd;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 600;
+}
+.btn_ms {
+  width: 100px;
+  height: 30px;
+  background: #ddd;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 600;
+}
+.text {
+  b {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
