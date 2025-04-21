@@ -19,37 +19,18 @@ function showbtn() {
 }
 //table//
 
-const data = [
-  ["Date", "Order Id", "Name", "Price", "Quantity", "Total"],
-  ["2017-09-29 01:22", 200397, "Samsung S8 Black", "$735.00", 1, "$735.00"],
-  ["2017-09-29 01:22", 200397, "Samsung S8 Black", "$735.00", 1, "$735.00"],
-  ["2017-09-29 01:22", 200397, "Samsung S8 Black", "$735.00", 1, "$735.00"],
-  ["2017-09-29 01:22", 200397, "Samsung S8 Black", "$735.00", 1, "$735.00"],
-];
+const tableEl = document.querySelector(".table tbody")
+ 
 
-const table = document.createElement("table");
+function add() {
+    const newRow = tableEl.insertRow();
+    newRow.innerHTML = `
+      <td>2025-04-20 12:00</td>
+      <td>200399</td>
+      <td>New Product</td>
+      <td>$123.45</td>
+      <td>1</td>
+      <td>$123.45</td>
+    `;
+  }
 
-const headerRow = document.createElement("tr");
-data[0].forEach((headerText) => {
-  const th = document.createElement("th");
-  th.textContent = headerText;
-  headerRow.appendChild(th);
-});
-table.appendChild(headerRow);
-
-document.getElementById("table-container").appendChild(table);
-
-let rowIndex = 1;
-document.getElementById("addRowBtn").addEventListener("click", () => {
-  const sourceRow = data[(rowIndex % (data.length - 1)) + 1];
-  const row = document.createElement("tr");
-
-  sourceRow.forEach((cellData) => {
-    const td = document.createElement("td");
-    td.textContent = cellData;
-    row.appendChild(td);
-  });
-
-  table.appendChild(row);
-  rowIndex++;
-});
